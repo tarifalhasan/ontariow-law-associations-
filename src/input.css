@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;500;600;700&family=Inter:wght@400;500&family=Open+Sans:wght@400;500;600&family=Poppins:wght@600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background: #f8f9fa;
+  color: #181817;
+  font-family: "Darker Grotesque";
+  overflow-x: hidden;
+}
+
+@layer base {
+  h1 {
+    @apply text-7xl;
+    @apply leading-[71px];
+    @apply tracking-[-2px];
+    @apply text-[#181817];
+    @apply font-semibold;
+  }
+
+  h2 {
+    @apply text-[52px];
+    @apply font-semibold;
+    @apply leading-[54px];
+    @apply tracking-[-2px];
+    @apply text-[#181817];
+  }
+  h3 {
+    @apply text-[36px];
+    @apply leading-[30px];
+    @apply font-semibold;
+    @apply text-[#181817];
+  }
+  p {
+    @apply text-[22px];
+    @apply leading-6;
+    @apply font-medium;
+    @apply text-[#6E6E6E];
+  }
+  span {
+    @apply text-lg;
+    @apply text-[#FA207A];
+    @apply font-semibold;
+  }
+  a {
+    @apply text-[#6E6E6E];
+    @apply text-2xl;
+    @apply leading-7;
+    @apply font-medium;
+  }
+}
+@layer components {
+  .pink_btn {
+    background: #fa207a;
+    border-radius: 7px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 0.7rem 0.7rem;
+  }
+  .hero_image {
+    background-image: url("../image/hero.jpg");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .advocacy_icon > i {
+    color: #fa207a;
+    font-size: 26px;
+  }
+  i.fa-arrow-right {
+    color: #fa207a;
+  }
+  a.right_arrow {
+    display: flex;
+    margin-left: 78%;
+    margin-bottom: 9px;
+  }
+  .subscribe_news_latter {
+    background: #341197;
+    box-shadow: 22px 31px 169px rgb(0 0 0 / 8%);
+    border-radius: 13px;
+    background-image: url(../image/shape1.png);
+    width: 100%;
+    height: 100%;
+    background-position-x: 136px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .subscribeBtn {
+    background: none;
+    border: 1px solid #34384c;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+  }
+  .footerBtn {
+    background: none;
+    border-radius: 0px;
+  }
+  #footer {
+    background-color: #000;
+    color: white;
+    padding-top: 40px;
+  }
+  #footer > a {
+    color: #ffffff;
+    opacity: 0.7;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .footer_brand > img {
+    height: 91px;
+    width: 268px;
+    margin: 0 auto;
+  }
+  .fa-brands {
+    font-size: 18px;
+    color: #ffffff;
+  }
+  #footer_item > h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+  #footer_item > ul {
+    margin-top: 10px;
+  }
+  #footer_item > ul > li > a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #6e6e6e;
+  }
+  #footer_item > ul > li > i {
+    color: #fa207a;
+    padding-right: 16px;
+  }
+  #copy_right > h3 {
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+  #copy_right > ul > li a {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    opacity: 0.4;
+  }
+  #copy_right {
+    margin-top: 20px;
+  }
+}
